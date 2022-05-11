@@ -1,1 +1,2 @@
 print("eren")
+print ("akıska")
