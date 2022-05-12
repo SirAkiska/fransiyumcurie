@@ -1,17 +1,15 @@
-<<<<<<< Updated upstream
-=======
 from PIL import Image
 print("*****FRANSİYUM CURİE HOŞ GELDİNİZ*****")
 print("element bilgileri için -->1 \n element resimleri için -->2 \n günlük karışımlar için -->3 \n asit-baz için -->4 ")
 a=int(input("Lütfen tercıhte bulununuz"))
 if a==1:
     print("istediğiniz elementin atom numarasını giriniz")
-    f0=open("D:\GitHub/fransiyumcurie\dosyalar/element.txt","r")
-    f1=open("D:\GitHub/fransiyumcurie\dosyalar/sembol.tx t","r")
-    f2=open("D:\GitHub/fransiyumcurie/dosyalar/tür","r")
-    f3=open("D:\GitHub/fransiyumcurie\dosyalar/grupadı","r")
-    f4=open("D:\GitHub/fransiyumcurie\dosyalar/hal","r")
-    f5=open("D:\GitHub/fransiyumcurie\dosyalar/erime","r")
+    f0=open("D:\GitHub/fransiyumcurie\dosyalar\element.txt","r")
+    f1=open("D:\GitHub/fransiyumcurie\dosyalar\sembol.txt","r")
+    f2=open("D:\GitHub/fransiyumcurie\dosyalar/tür.txt","r")
+    f3=open("D:\GitHub/fransiyumcurie\dosyalar\grupadı.txt","r")
+    f4=open("D:\GitHub/fransiyumcurie\dosyalar\hal.txt","r")
+    f5=open("D:\GitHub/fransiyumcurie\dosyalar\erime.txt","r")
     list1=list(f0)
     list2=list(f1)
     list3=list(f2)
@@ -33,6 +31,3 @@ if a==1:
     print("elementin bulunduğu grubun adın -->%s"%(c3))
     print("elementin oda koşullarındaki hali -->%s"%(c4))
     print("elementin erime noktası -->%s"%(c5))
-
-
->>>>>>> Stashed changes
