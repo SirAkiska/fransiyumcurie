@@ -35,3 +35,8 @@ if a==1:
     print("elementin oda koşullarındaki hali -->%s"%(c4))
     print("elementin erime noktası -->%s"%(c5))
     print("elementin keşfi --> %s"%(c6))
+if a==2:
+    x = str(input("Bir Sayi giriniz: "))
+    resim = "D:\GitHub\fransiyumcurie/element resimleri"+ x +".jpg"
+    img = Image.open(resim)
+    img.show()
