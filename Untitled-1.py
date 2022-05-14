@@ -10,12 +10,14 @@ if a==1:
     f3=open("D:\GitHub/fransiyumcurie\dosyalar\grupadı.txt","r")
     f4=open("D:\GitHub/fransiyumcurie\dosyalar\hal.txt","r")
     f5=open("D:\GitHub/fransiyumcurie\dosyalar\erime.txt","r")
+    f6=open("D:\GitHub/fransiyumcurie\dosyalar\kaşif.txt","r")
     list1=list(f0)
     list2=list(f1)
     list3=list(f2)
     list4=list(f3)
     list5=list(f4)
     list6=list(f5)
+    list7=list(f6)
     x=int(input("1-118 arasında atom numarası giriniz"))
     x-=1
     c0=list1[x]
@@ -24,10 +26,12 @@ if a==1:
     c3=list4[x]
     c4=list5[x]
     c5=list6[x]
+    c6=list7[x]
     print("verdiğiniz atom numarasınna göre")
-    print("elementin adı-->%s"%(c0))
+    print("elementin adı-->%s"% (c0))
     print("elementin bilimsel gösterimi -->%s"%(c1))
     print("elemen türü -->%s"%(c2))
     print("elementin bulunduğu grubun adın -->%s"%(c3))
     print("elementin oda koşullarındaki hali -->%s"%(c4))
     print("elementin erime noktası -->%s"%(c5))
+    print("elementin keşfi --> %s"%(c6))
