@@ -1,9 +1,9 @@
 from PIL import Image
-print("*****FRANSİYUM CURİE HOŞ GELDİNİZ*****")
-print("element bilgileri için -->1 \n element resimleri için -->2 \n günlük karışımlar için -->3 \n asit-baz için -->4 ")
+print("     *****FRANSİYUM CURİE HOŞ GELDİNİZ*****      ")
+print("element bilgileri için -->1 \nelement resimleri için -->2 \ngünlük karışımlar için -->3 \nasit-baz için -->4 ")
 a=int(input("Lütfen tercıhte bulununuz:"))
 if a==1:
-    print("istediğiniz elementin atom numarasını giriniz:")
+    print("[Element kütüphanesi]")
     f0=open("D:\GitHub/fransiyumcurie\dosyalar\element.txt","r")
     f1=open("D:\GitHub/fransiyumcurie\dosyalar\sembol.txt","r")
     f2=open("D:\GitHub/fransiyumcurie\dosyalar/tür.txt","r")
@@ -36,7 +36,8 @@ if a==1:
     print("elementin erime noktası -->%s"%(c5))
     print("elementin keşfi --> %s"%(c6))
 if a==2:
+    print("[Resim kütüphanesi]")
     x = str(input("Bir Sayi giriniz: "))
-    resim = "D:\GitHub\fransiyumcurie/element resimleri"+ x +".jpg"
+    resim = "D:\GitHub/fransiyumcurie/element resimleri"+ x +".jpg"
     img = Image.open(resim)
     img.show()
