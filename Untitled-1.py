@@ -38,6 +38,6 @@ if a==1:
 if a==2:
     print("[Resim kütüphanesi]")
     x = str(input("Bir Sayi giriniz: "))
-    resim = "D:\GitHub/fransiyumcurie/element resimleri"+ x +".jpg"
+    resim = "D:\GitHub/fransiyumcurie/element resimleri/"+ x +".jpg"
     img = Image.open(resim)
     img.show()
