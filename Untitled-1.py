@@ -27,7 +27,7 @@ if a==1:
     c4=list5[x]
     c5=list6[x]
     c6=list7[x]
-    print("*****verdiğiniz atom numarasınna göre*****")
+    print("\n*****verdiğiniz atom numarasınna göre*****\n")
     print("elementin adı-->%s"% (c0))
     print("elementin bilimsel gösterimi -->%s"%(c1))
     print("elemen türü -->%s"%(c2))
