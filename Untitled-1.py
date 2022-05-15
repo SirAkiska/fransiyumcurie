@@ -42,4 +42,22 @@ if a==2:
     img = Image.open(resim)
     img.show()
 if a==3:
+<<<<<<< Updated upstream
     print("furkan")
+=======
+    list=["Amonyak(1)","Karbonat(2)"]
+    print(list)
+    g=int(input("Bileşik seçiniz:"))
+    if g==1 :
+        print("           Amonyak-NH3")
+        print(" ")
+        print("  "+"Amonyak, formülü NH3 olan; azot atomu ve hidrojen atomundan oluşan renksiz, keskin ve hoş olmayan kokuya sahip bir gaz bileşiğidir. OH- iyonu içermediği halde suda zayıf baz özelliği gösterir. Bir amonyak molekülü, bir azot ve üç hidrojen atomundan oluşur.")
+        print(" ")
+        print("           Günlük Hayatta Kullanımı")
+        print(" ")
+        print("  "+"Amonyak, gübre, ilaç, boya, parfüm gibi maddelerin sentezlenmesinde ilk aşamada kullanılmaktadır. Amonyak canlılar için zehirli bir maddedir, kullanılırken dikkat edilmesi gerekir. Piyasada amonyak adı altında satılan maddeler amonyağın sulu çözeltisi olan amonyum hidroksittir.")
+    if g==2 :
+        print("Karbonat")
+        print(" ")
+        print("  "+" Karbonat, kimyada karbonik asitin bir tuzudur. Karbonat iyonu CO32- varlığında nitelendirilir. Aynı zamanda ismi karbonik asitin esteri manasına da gelebilir.Jeoloji ve mineralojide karbonat terimi hem karbonat minerallerine, hem de karbonat taşlarına tekabül eder ve her ikisi de CO32- şeklinde ifade edilir.")
+>>>>>>> Stashed changes
