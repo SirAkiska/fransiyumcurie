@@ -5,7 +5,7 @@ a=int(input("Lütfen tercıhte bulununuz:"))
 if a==1:
     print("[Element kütüphanesi]")
     f0=open("D:\GitHub/fransiyumcurie\dosyalar\element.txt","r")
-    f1=open("D:\GitHub/fransiyumcurie\dosyalar\sembol.txt","r")
+    f1=open("D:\GitHub/fransiyumcurie\dosyalar\sembol txt.txt","r")
     f2=open("D:\GitHub/fransiyumcurie\dosyalar/tür.txt","r")
     f3=open("D:\GitHub/fransiyumcurie\dosyalar\grupadı.txt","r")
     f4=open("D:\GitHub/fransiyumcurie\dosyalar\oda koşullarındaki halleri .txt.txt","r")
