@@ -43,3 +43,4 @@ if a==2:
     img.show()
 if a==3:
     print("furkan")
+print("eren")
