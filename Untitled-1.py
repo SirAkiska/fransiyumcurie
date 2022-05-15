@@ -44,6 +44,7 @@ if a==2:
 if a==3:
 <<<<<<< Updated upstream
     print("furkan")
+<<<<<<< HEAD
 =======
     list=["Amonyak(1)","Karbonat(2)"]
     print(list)
@@ -61,3 +62,6 @@ if a==3:
         print(" ")
         print("  "+" Karbonat, kimyada karbonik asitin bir tuzudur. Karbonat iyonu CO32- varlığında nitelendirilir. Aynı zamanda ismi karbonik asitin esteri manasına da gelebilir.Jeoloji ve mineralojide karbonat terimi hem karbonat minerallerine, hem de karbonat taşlarına tekabül eder ve her ikisi de CO32- şeklinde ifade edilir.")
 >>>>>>> Stashed changes
+=======
+print("eren")
+>>>>>>> c2a6c99a2a4d4eda2a53552b8c88acd947d2697f
