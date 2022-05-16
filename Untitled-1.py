@@ -1,6 +1,6 @@
 from PIL import Image
 print("     *****FRANSİYUM CURİE HOŞ GELDİNİZ*****      ")
-print("element bilgileri için -->1 \nelement resimleri için -->2 \ngünlük karışımlar için -->3 \nasit-baz için -->4 ")
+print("#element bilgileri için -->1 \n#element resimleri için -->2 \n#günlük karışımlar için -->3 \n#asit-baz için -->4 ")
 a=int(input("Lütfen tercıhte bulununuz:"))
 if a==1:
     print("[Element kütüphanesi]")
@@ -40,26 +40,6 @@ if a==2:
     x = str(input("Bir Sayi giriniz: "))
     resim = "D:\GitHub/fransiyumcurie/element resimleri/"+ x +".jpg"
     img = Image.open(resim)
-    img.show()
+    img.show() 
 if a==3:
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-=======
-    list=["Amonyak(1)","Karbonat(2)"]
-    print(list)
-    g=int(input("Bileşik seçiniz:"))
-    if g==1 :
-        print("           Amonyak-NH3")
-        print(" ")
-        print("  "+"Amonyak, formülü NH3 olan; azot atomu ve hidrojen atomundan oluşan renksiz, keskin ve hoş olmayan kokuya sahip bir gaz bileşiğidir. OH- iyonu içermediği halde suda zayıf baz özelliği gösterir. Bir amonyak molekülü, bir azot ve üç hidrojen atomundan oluşur.")
-        print(" ")
-        print("           Günlük Hayatta Kullanımı")
-        print(" ")
-        print("  "+"Amonyak, gübre, ilaç, boya, parfüm gibi maddelerin sentezlenmesinde ilk aşamada kullanılmaktadır. Amonyak canlılar için zehirli bir maddedir, kullanılırken dikkat edilmesi gerekir. Piyasada amonyak adı altında satılan maddeler amonyağın sulu çözeltisi olan amonyum hidroksittir.")
-    if g==2 :
-        print("Karbonat")
-        print(" ")
-        print("  "+" Karbonat, kimyada karbonik asitin bir tuzudur. Karbonat iyonu CO32- varlığında nitelendirilir. Aynı zamanda ismi karbonik asitin esteri manasına da gelebilir.Jeoloji ve mineralojide karbonat terimi hem karbonat minerallerine, hem de karbonat taşlarına tekabül eder ve her ikisi de CO32- şeklinde ifade edilir.")
->>>>>>> Stashed changes
-=======
->>>>>>> c2a6c99a2a4d4eda2a53552b8c88acd947d2697f
+    print("furkan")
