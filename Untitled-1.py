@@ -42,4 +42,4 @@ if a==2:
     img = Image.open(resim)
     img.show() 
 if a==3:
-    print("furkan")
+    
