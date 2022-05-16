@@ -1,6 +1,6 @@
 from PIL import Image
 print("     *****FRANSİYUM CURİE HOŞ GELDİNİZ*****      ")
-print("#element bilgileri için -->1 \n#element resimleri için -->2 \n#günlük karışımlar için -->3 \n#asit-baz için -->4 ")
+print("#Elementler için -->1 \n#Element resimleri için -->2 \n#Karışımlar için -->3 \n#Asit-baz için -->4\nKahramanlar-->5 ")
 a=int(input("Lütfen tercıhte bulununuz:"))
 if a==1:
     print("[Element kütüphanesi]")
@@ -41,4 +41,8 @@ if a==2:
     resim = "D:\GitHub/fransiyumcurie/element resimleri/"+ x +".jpg"
     img = Image.open(resim)
     img.show() 
-
+if a==5:
+    print("****TEŞEKKÜRLER****")
+    print("Lavoisier\nJohann Döbereiner\nAlexandre Beguyer de Chancourtois\nJohn Newlands\nHenry Moseley\nGilen Siborg\nDimitri Mendeleyev  ve Lothar Meyer\nMarie curie\nElizabeth Ascheim")
+if a>=6:
+    print("Lütfen uygun bir tercihte bulunuz\n***Elementler için-->1\n***Resimler için-->2\n***Karışımlar için-->3\n***Asit-baz için-->4")
