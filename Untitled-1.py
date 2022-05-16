@@ -41,5 +41,3 @@ if a==2:
     resim = "D:\GitHub/fransiyumcurie/element resimleri/"+ x +".jpg"
     img = Image.open(resim)
     img.show() 
-if a==3:
-    print("furkan")
