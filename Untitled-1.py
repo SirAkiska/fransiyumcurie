@@ -1,4 +1,4 @@
-from PİL import image 
+from PIL import Image 
 print("     *****FRANSİYUM CURİE HOŞ GELDİNİZ*****      ")
 print("#Elementler için -->1 \n#Element resimleri için -->2 \n#Karışımlar için -->3 \n#Asit-baz için -->4\nKahramanlar-->5 ")
 a=int(input("Lütfen tercıhte bulununuz:"))
@@ -42,7 +42,7 @@ if a==2:
     img = Image.open(resim)
     img.show() 
 if a==4:
-    f0=open("C:\Users\erenk\Documents\GitHub\fransiyumcurie\Asit-Baz/Asit.txt","r")
+    f0=open("D:\GitHub/fransiyumcurie\Asit-Baz/Asit.txt.txt","r")
     list1=list(f0)
     x=int(input("1-118 arasında atom numarası giriniz:"))
     n1=list1[x]
