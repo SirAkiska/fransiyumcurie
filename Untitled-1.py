@@ -43,6 +43,6 @@ if a==2:
     img.show() 
 if a==5:
     print("****TEŞEKKÜRLER****")
-    print("Lavoisier\nJohann Döbereiner\nAlexandre Beguyer de Chancourtois\nJohn Newlands\nHenry Moseley\nGilen Siborg\nDimitri Mendeleyev  ve Lothar Meyer\nMarie curie\nElizabeth Ascheim")
+    print("Lavoisier\nJohann Döbereiner\nAlexandre Beguyer de Chancourtois\nJohn Newlands\nHenry Moseley\nGilen Siborg\n5Dimitri Mendeleyev  ve Lothar Meyer\nMarie curie\nElizabeth Ascheim")
 if a>=6:
     print("Lütfen uygun bir tercihte bulunuz\n***Elementler için-->1\n***Resimler için-->2\n***Karışımlar için-->3\n***Asit-baz için-->4")
