@@ -4,7 +4,7 @@ print("#Elementler için -->1 \n#Element resimleri için -->2 \n#Karışımlar i
 a=int(input("Lütfen tercıhte bulununuz:"))
 if a==1:
     print("[Element kütüphanesi]")
-    f0=open("D:\GitHub/fransiyumcurie\dosyalar\element.txt","r")#Beş tane elementsel bilgi içeren metni open komutu ile açıp "read"modu ile okuma yapmayı sağladık
+    f0=open("D:\GitHub/fransiyumcurie\dosyalar\element.txt","r")#yedi tane elementsel bilgi içeren metni open komutu ile açıp "read"modu ile okuma yapmayı sağladık
     f1=open("D:\GitHub/fransiyumcurie\dosyalar\Semboller.txt","r")
     f2=open("D:\GitHub/fransiyumcurie\dosyalar/tür.txt","r")
     f3=open("D:\GitHub/fransiyumcurie\dosyalar\grupadı.txt","r")
