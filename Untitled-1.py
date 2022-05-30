@@ -1,16 +1,16 @@
 from PIL import Image 
 print("     *****FRANSİYUM CURİE HOŞ GELDİNİZ*****      ")#Bir başlangıç menüsü hazırlamak istedik
-print("#Elementler için -->1 \n#Element resimleri için -->2 \n#Karışımlar için -->3 \n#Asit-baz için -->4\nKahramanlar-->5 ")#if komutu yardımı ile kullanım tercıhleri oluşturduk
+print("#Elementler için -->1 \n#Element resimleri için -->2 \n#Karışımlar için -->3 \nKahramanlar-->4 ")#if komutu yardımı ile kullanım tercıhleri oluşturduk
 a=int(input("Lütfen tercıhte bulununuz:"))
 if a==1:
     print("[Element kütüphanesi]")
-    f0=open("D:\GitHub/fransiyumcurie\dosyalar\element.txt","r")#yedi tane elementsel bilgi içeren metni open komutu ile açıp "read"modu ile okuma yapmayı sağladık
-    f1=open("D:\GitHub/fransiyumcurie\dosyalar\Semboller.txt","r")
-    f2=open("D:\GitHub/fransiyumcurie\dosyalar/tür.txt","r")
-    f3=open("D:\GitHub/fransiyumcurie\dosyalar\grupadı.txt","r")
-    f4=open("D:\GitHub/fransiyumcurie\dosyalar\oda koşullarındaki halleri .txt.txt","r")
-    f5=open("D:\GitHub/fransiyumcurie\dosyalar\erime noktaları .txt.txt","r")
-    f6=open("D:\GitHub/fransiyumcurie\dosyalar\kaşif.txt","r")
+    f0=open("fransiyumcurie\dosyalar\element.txt","r")#yedi tane elementsel bilgi içeren metni open komutu ile açıp "read"modu ile okuma yapmayı sağladık
+    f1=open("fransiyumcurie\dosyalar\Semboller.txt","r")
+    f2=open("fransiyumcurie\dosyalar/tür.txt","r")
+    f3=open("fransiyumcurie\dosyalar\grupadı.txt","r")
+    f4=open("fransiyumcurie\dosyalar\oda koşullarındaki halleri .txt.txt","r")
+    f5=open("fransiyumcurie\dosyalar\erime noktaları .txt.txt","r")
+    f6=open("fransiyumcurie\dosyalar\kaşif.txt","r")
     list1=list(f0)
     list2=list(f1)#metin dosyalarındaki bilgileri listelemeye giderek kullanım kolaylığı elde etmek istedik
     list3=list(f2)
@@ -41,19 +41,96 @@ if a==2:
     resim = "D:\GitHub/fransiyumcurie/element resimleri/"+ x +".jpg"#sayıları resimler ile eşleştırdık girilen sayıyı atom numarası gibi değerlendirebiliriz
     img = Image.open(resim)#resimleri açmak için kullandığımız komut satırı 
     img.show() 
+<<<<<<< HEAD
+
+=======
+if a==3:
+    list=["Amonyak(1)","Karbonat(2)","Bakır(II)sülfat(3)","Sülfürik asit(4)","Sodyum bikarbonat(5)","Asetik asit(6)","Sodyum hidroksit(7)"," Hidroklorik asit(8)","Nitrik asit(9)","Kalsiyum karbonat(10)" ]
+    print(list)
+    g=int(input("Bileşik seçiniz:"))
+    if g==1 :
+        print("           Amonyak(NH3)")
+        print(" ")
+        print("   Amonyak, formülü NH3 olan; azot atomu ve hidrojen atomundan oluşan renksiz, keskin ve hoş olmayan kokuya sahip bir gaz bileşiğidir. OH- iyonu içermediği halde suda zayıf baz özelliği gösterir. Bir amonyak molekülü, bir azot ve üç hidrojen atomundan oluşur.")
+        print(" ")
+        print("           Günlük Hayatta Kullanımı")
+        print(" ")
+        print("   Amonyak, gübre, ilaç, boya, parfüm gibi maddelerin sentezlenmesinde ilk aşamada kullanılmaktadır. Amonyak canlılar için zehirli bir maddedir, kullanılırken dikkat edilmesi gerekir. Piyasada amonyak adı altında satılan maddeler amonyağın sulu çözeltisi olan amonyum hidroksittir.")
+    if g==2 :
+        print("           Karbonat(CO3)")
+        print(" ")
+        print("   Karbonat, kimyada karbonik asitin bir tuzudur. Karbonat iyonu CO32- varlığında nitelendirilir. Aynı zamanda ismi karbonik asitin esteri manasına da gelebilir.Jeoloji ve mineralojide karbonat terimi hem karbonat minerallerine, hem de karbonat taşlarına tekabül eder ve her ikisi de CO32- şeklinde ifade edilir.")
+        print(" ")
+        print("            Günlük Hayatta Kullanımı")
+        print(" ")
+        print("   Karbonat, hamur işi tariflerinin vazgeçilmezi olarak bilinir,Karbonat aynı zamanda iyi bir diş temizleyicidir. Dişlerde çay, kahve ve sigaradan dolayı oluşan sarı lekelerin temizlenmesinde yardımcı olur.Karbonat, içinde barındırdığı anti bakteriyel özelliği sayesinde yer yüzeylerinin temizliği ve hijyeninde kullanılabilir. Etkin bir mikrop öldürücüdür aynı zamanda böcek ve zararlı haşaratı da kokusu sayesinde bulunduğunuz mekanlardan uzak tutacaktır.tekstil ürünlerinizde oluşacak lekelerin temizliği için karbonat tercih edebilirsiniz.")
+    if g==3:
+        print("           Bakır(II)sülfat(CuSO4)")
+        print(" ")
+        print("   Küprik sülfat ya da bakır sülfat olarak da denilen Bakır(II) sülfat, kimyasal formülü CuSO4 olan bir kimyasal bileşiktir. Bu tuzun hidrasyon derecelerine bağlı olarak bir dizi farklı bileşikleri mevcuttur. Susuz formu soluk yeşil ya da grimsi beyaz bir toz olmasına karşın en çok bilinen pentahidrat (CuSO4•5H2O) formu, parlak mavi renktedir. Çok az miktardaki CuSO4•5H2O çevreye çok zehirlidir, gözleri ve cildi tahriş eder ve yutulduğunda zararlı da olabilir. Oktahedral moleküler geometriye ve paramanyetik özelliğe sahip olan bakır(II) sülfat ekzotermik olarak suda çözünürek [Cu(H2O)6]2+ kompleksini oluşturur. Bakır(II) sülfat mavi vitriyol, göztaşı ve göktaşı olarak da bilinmektedir.")
+        print(" ")
+        print("            Günlük Hayatta Kullanımı")
+        print(" ")
+        print("    Bakır(II) sülfat bağlardaki ve meyve bahçelerindeki mantar hastalıkları ile mücadele amacıyla zirai ilaçların kullanılmasında etkin maddedir. Su borularının işgalci sucul bitkilerin köklerine karşı herbisit olarak bakır sülfat kullanılır. Yosun giderici şeklinde yüzme havuzlarında temizleyici olarak kullanılır. Seyreltik şeklindeki sülfat çözeltisi akvaryumda yaşayan balıklar parazit enfeksiyonları tedavisinde kullanılır ve akvaryumlarda bulunan salyangozları öldürmek için de bakır sülfat çözeltisi kullanılabilir.")
+    if g==4:
+        print("           Sülfürik asit(H2SO4)")
+        print(" ")
+        print("   Sülfürik(VI) asit ya da halk arasında bilinen ismi ile zaç yağı, H2SO4, güçlü bir mineral asididir. Olası kaşifi 8. yüzyıl simyacısı Cabir bin Hayyan tarafından yenime uğratıcı, renksiz ve yoğunluğu yüksek sıvı olarak tanımlanmıştır. Suda her konsantrasyonda çözünebilir. Büyük ölçüde korozif oluşu, güçlü asidik yapısından ve dehidrasyon özelliğinden kaynaklanmaktadır.")
+        print(" ")
+        print("            Günlük Hayatta Kullanımı")
+        print(" ")
+        print("    Sülfürik asit çeşitli derişimleri durumunda gübre, pigment, boyar madde, patlayıcı madde, ilaçlama, inorganik tuz ve petrol arıtım ile metalurji işlemlerinde kullanılmaktadır. Bunların yanı sıra çeşitli pillerin yapımlarında da sülfürik asitten yararlanıldığını görebilmek mümkündür. Bu asidin halk arasında akü asidi olarak bilindiğini söyleyebiliriz.")
+    if g==5:
+        print("           Sodyum bikarbonat(NaHCO3)")
+        print(" ")
+        print("   Sodyum bikarbonat ya da soda kimyasal formulü NaHCO3 olan bir kimyasal bileşiktir. Kabartma tozu olarak da bilinir. Sodyum tuzlarından birisidir. Antiasit özelliği vardır. Kabartma tozu olarak da kullanılır. Suda çözünür. Beyaz katı kristal tozdur. Sodyum karbonat'ı andıran hafif alkali tadı vardır. Salin solüsyonu bileşiminde de kullanılır.")
+        print(" ")
+        print("            Günlük Hayatta Kullanımı")
+        print(" ")
+        print("   Sodyum bikarbonat, halk arasında sıklıkla hamur kabartma tozu olarak bilindiği için, bu şekilde kullanımı yaygındır. Ancak bunun yanı sıra yanmış tepsilerin ve tencerelerin rahat bir şekilde temizlenebilmesi için iyi bir çözümdür ayrıca demliklerin içerisindeki kalıntıların, termoslardaki ve vazolardaki kalıntıların temizlenmesinde de kullanılır.Ayrıca ağız kokusu olanların da derdine çare olabilmektedir. İstenmeyen kokuları önleyen bu madde, lavabo kokularının önlenmesi, ayakkabı kokularının giderilmesi, buzdolabı kokularının giderilmesi için de kullanılabilir.Böcek sokmaları sonrasında, böcek ısırığının olduğu yere sodyum bikarbonatlı su ile uygulama yapıldığında ısırılan bölgedeki kaşıntıyı engellemektedir.Güneş yanıklarında sodyum bikarbonatlı su yanan bölgeye anında uygulanırsa, yanık bölgedeki ağrıyı hafifletmektedir.")
+    if g==6:
+        print("           Asetik asit(CH3COOH)")
+        print(" ")
+        print("   Asetik asit veya etanoik asit CH3COOH formüllü bir organik asittir, sirkeye ekşi tadını ve keskin kokusunu vermesiyle bilinir. Karboksilik asitlerin en küçüklerindendir (en küçük olan formik asittir). Doğada karbonhidratların yükseltgenmesiyle oluşur. Sanayide asetik asit hem biyolojik yolla hem de sentetik yolla imal edilir. Tuz ve esterine asetat denir. Suda tamamen çözünür.")
+        print(" ")
+        print("            Günlük Hayatta Kullanımı")
+        print(" ")
+        print("   Sirke imalatında kullanılır. Ayrıca turşu yapımında mikroorganizmaların oluşmasını engelleyerek sebzelerin bozulmasını engeller. Sanayide çoğu kimyasalın üretiminde hammadde olarak kullanılır. Özellikle vinil asetat üretiminde kullanılır, bundan elde edilen polivinil asetat tahta tutkalı olarak kullanılır.Çözücü olarak sanayide kullanılır. Örneğin, PET plastiklerin üretiminde kullanılan tereftalik asitin üretiminde çözücü olarak kullanılır. Bu kullanım asetik asitin tüm kullanımı içerisinde %5-10 oranındadır. 4. Gıda sektöründe tampon olarak kullanılır. Asitlik sağlayıcı, koruyucu, lezzet verici olarak kullanılır.")
+    if g==7:
+        print("            Sodyum hidroksit(NaOH)")
+        print(" ")
+        print("   Kostik ve kostik soda olarak da bilinen sodyum hidroksit (kostik soda veya sud kostik de denir), NaOH formülüne sahip bir inorganik bileşiktir. Sodyum katyonları Na+ ve hidroksit anyonları OH- içeren beyaz renkli katı bir iyonik bileşiktir.")
+        print(" ")
+        print("            Günlük Hayatta Kullanımı")
+        print(" ")
+        print("   En kuvvetli baz olan kostiğin kullanım alanı çok geniştir. Tekstil endüstrisinde kostik kullanılır. Sabun ve temizlik malzemeleri imalatında kullanımı vardır. Özellikle sıvı ve katı sabun yapımında. Petrol rafinelerinde kostik kullanılır. Yapay ipek yapımında kostik kullanılır. Kağıt hamuru ve kağıt üretiminde kostik kullanılır. PH yükseltilmesi gereken yerlerde kostik kullanılır. Arıtmalarda asidik ortamın nötralizasyonunda ve çöktürme amaçlı kostik kullanılır. Boya kimyasalları sektöründe kostik kullanılır. Zeytinin işlemesinde kostik kullanılır. Saf su üretiminde (İyon Değiştirici Reçinelerin Rejenerasyonunda) ve su arıtma da kostik kullanılır. Patlayıcı maddelerin üretiminde kostik kullanılır. Tarımsal kimyasaalların üretilmesinde kostik kullanılır. İlaç endüstrisinde kostik kullanılır.")
+    if g==8:
+        print("            Hidroklorik asit(HCl)")
+        print(" ")
+        print("    Hidroklorik asit, hidrojen ve klor elementlerinden oluşan, oda sıcaklığı ve normal basınçta gaz hâlinde olan hidrojen klorürün sulu çözeltisine verilen ad. Halk arasında tuz ruhu olarak da bilinir. 9. yüzyılda simyacı Cabir bin Hayyan tarafından keşfedildi ve sonrasında simya alanında kullanıldı.Günümüzde PVC'den demir-çeliğe, organik madde üretiminden gıda sektörüne kadar hemen hemen tüm alanlarda hidroklorik asit kullanılmaktadır.Hidroklorik asit, sağladığı kolaylıkların yanında, zehirli bir maddedir ve insan dokuları başta olmak üzere çoğu yüzeye büyük tahribat verir. Bu nedenle bu asit ile çalışılırken güvenlik önlemleri en üst düzeyde tutulmalıdır.")
+        print(" ")
+        print("            Günlük Hayatta Kullanımı")
+        print(" ")
+        print("     Sanayide petrol, reçine rejenerasyonu, kağıt, ilaç, boya, kimya, tekstil, metal klorürü üretimi gibi alanlarda kullanılmaktadır. Çeliğin dekapajı: Hidroklorik asit çeliğin temizlenmesi için yapılan dekapaj işleminde sıkça kullanılmaktadır. PVC maddesi için üretilen Vinil klorit gibi organik madde üretiminde hidroklorik asit kullanılmaktadır. Hidroklorik asitten elde edilen fosgen 1. Dünya Savaşında kimyasal silah olarak kullanılan bir organik maddedir.")
+    if g==9:
+        print("            Nitrik asit(HNO3)")
+        print(" ")
+        print("    Nitrik asit HNO3 kimyasal formülüne sahip oldukça aşındırıcı bir inorganik asittir. Kezzap olarak da adlandırılır.Saf bileşik renksizdir. Ancak uzun süre bekleyen eski asitler azot oksitleri ve suya ayrışması nedeniyle sarı renge dönebilme özelliğindedirler. Piyasada bulunan nitrik asitlerin çoğu % 68'lik bir konsantrasyona sahiptir. Çözelti, % 86'dan fazla HNO3 içerdiğinde, dumanlı nitrik asit olarak adlandırılır. Mevcut azot dioksit miktarına bağlı olarak, dumanlı nitrik asit ayrıca %86’nın üzerindeki konsantrasyonlarda kırmızı dumanlı nitrik asit veya %95’in üzerindeki konsantrasyonlarda beyaz dumanlı nitrik asit olarak tanımlanır. Nitrik asit, tipik olarak bir organik moleküle nitro grubunun eklenmesi olan nitrolama için kullanılan ana reaksiyon maddesidir. Ortaya çıkan bazı nitro bileşikleri şok ve termik olarak hassas patlayıcı maddeler olsa da, bazıları mühimmat ve yıkımlarda kullanılacak kadar kararlıdır. Diğerleri ise daha kararlıdır ve mürekkep ve boyar maddelerde pigment olarak kullanılır. Nitrik asit, ayrıca kuvvetli bir oksitleyici madde olarak da yaygın şekilde kullanılmaktadır.")
+        print(" ")
+        print("            Günlük Hayatta Kullanımı")
+        print(" ")
+        print("   Gübre üretiminde kullanılır. Metal sanayisinde metallerin saflaştırılmasında kullanılır. Metallerin dağlanması işlemi sırasında kullanılır. Patlayıcı maddelerin üretiminde kullanılır. PH indirgenmesi gereken su arıtması gibi yerlerde kullanılır. Boya kimyasalları sektöründe kullanılır. Dinamit üretiminde kullanılır. Gümüş nitrat üretilmesi için kullanılır. Elektro polisaj işlemlerinde kullanılmaktadır.")
+    if g==10:
+        print("            Kalsiyum karbonat(CaCO3)")
+        print(" ")
+        print("    Kalsiyum karbonat, halk arasında kireç taşı olarak bilinen bir tür kimyasal bileşiktir. Bileşik formülü CaCO3 şeklindedir. Bu bileşik doğada en fazla eski kayaçlarda ve deniz kabuklarında bulunur. Kalsiyum karbonat, antiasitlerin bir üyesi olsa da, fazlası biyolojik olarak zararlıdır. Kalsiyum karbonatın doğada bulunduğu kayaçlar içinde en yoğun bilinenleri, aragonit, kalsit, vaterit, tebeşir, kireç taşı, mermer ve travertendir. Bir kayaç üzerinde kalsiyum karbonatın varlığının tespit edilmesi için hidroklorik asit veya sülfürik asit kullanılır.")
+        print(" ")
+        print("            Günlük Hayatta Kullanımı")
+        print(" ")
+        print("    Kalsiyum karbonat, sanayide, mermer, tebeşir ve kireç taşı gibi farklı malzemelerin üretiminde yoğun olarak kullanılır. Aynı şekilde boya malzemelerinin üretilmesinde yoğun olarak bu bileşikten yararlanılır. PVC üretiminde de kullanılan kalsiyum karbonat, seramik yapımında yararlanılan bir moleküldür. Tıp alanında,genellikle Böbrek fonksiyonunu kaybetmiş, kandaki fosforu idrar yolu ile atamayan kronik böbrek yetersizliği durumlarında besinlerdeki fosforu bağlamasında, fosfatlı bileşiklerin dengelenmesinde kullanılır. (phos-ex) Gıda alanında ise E170 adıyla katkı maddesi şeklinde ve soya sütünde kullanılır. Son yıllarda çevresel dengenin sağlanmasında kalsiyum karbonatın önemli bir yere sahip olduğu görülmüştür.")
+>>>>>>> f0f78edb606dd2088b5b6a9c6871338d097c183c
 if a==4:
-    f0=open("D:\GitHub/fransiyumcurie\Asit-Baz/Asit.txt.txt","r")
-    list1=list(f0)
-    x=int(input("1-118 arasında atom numarası giriniz:"))
-    n1=list1[x]
-    print("Asitiniz %s"%(n1))
-
-
-
-
-
-if a==5:
     print("****TEŞEKKÜRLER****")#periyodik tablo için önemli isimleri print komutu ile yazdık
     print("Lavoisier\nJohann Döbereiner\nAlexandre Beguyer de Chancourtois\nJohn Newlands\nHenry Moseley\nGilen Siborg\n5Dimitri Mendeleyev  ve Lothar Meyer\nMarie curie\nElizabeth Ascheim")
-if a>=6:
+if a>=5:
     print("Lütfen uygun bir tercihte bulunuz\n***Elementler için-->1\n***Resimler için-->2\n***Karışımlar için-->3\n***Asit-baz için-->4")#olası tercihler dışında yapılacak tercihler için uyarı ve kaçış noktası planladık
