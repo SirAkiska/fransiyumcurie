@@ -1,16 +1,16 @@
 from PIL import Image 
 print("     *****FRANSİYUM CURİE HOŞ GELDİNİZ*****      ")#Bir başlangıç menüsü hazırlamak istedik
-print("#Elementler için -->1 \n#Element resimleri için -->2 \n#Karışımlar için -->3 \n*Kahramanlar-->4 ")#if komutu yardımı ile kullanım tercıhleri oluşturduk
-a=int(input("Lütfen tercıhte bulununuz:"))
+print("#Elementler için -->1 \n#Element resimleri için -->2 \n#Karışımlar için -->3 \n*Kahramanlar-->4 ")#if komutu yardımı ile kullanım tercihleri oluşturduk
+a=int(input("Lütfen tercihte bulununuz:"))
 if a==1:
     print("[Element kütüphanesi]")
-    f0=open("fransiyumcurie\dosyalar\element.txt","r")#yedi tane elementsel bilgi içeren metni open komutu ile açıp "read"modu ile okuma yapmayı sağladık
-    f1=open("fransiyumcurie\dosyalar\Semboller.txt","r")
-    f2=open("fransiyumcurie\dosyalar/tür.txt","r")
-    f3=open("fransiyumcurie\dosyalar\grupadı.txt","r")
-    f4=open("fransiyumcurie\dosyalar\oda koşullarındaki halleri .txt.txt","r")
-    f5=open("fransiyumcurie\dosyalar\erime noktaları .txt.txt","r")
-    f6=open("fransiyumcurie\dosyalar\kaşif.txt","r")
+    f0=open("D:\GitHub/fransiyumcurie\element.txt","r")#yedi tane elementsel bilgi içeren metni open komutu ile açıp "read"modu ile okuma yapmayı sağladık
+    f1=open("D:\GitHub/fransiyumcurie/fransiyumcurie\Semboller.txt","r")
+    f2=open("D:\GitHub/fransiyumcurie/fransiyumcurie/tür.txt","r")
+    f3=open("D:\GitHub/fransiyumcurie/fransiyumcurie\grupadı.txt","r")
+    f4=open("D:\GitHub/ransiyumcurie/fransiyumcurie\oda koşullarındaki halleri .txt.txt","r")#dosya adı ile çalıştıramadık o yüzden doya yolu ile devam ettik
+    f5=open("D:\GitHub/fransiyumcurie/fransiyumcurie\erime noktaları .txt.txt","r")
+    f6=open("D:\GitHub/fransiyumcurie/fransiyumcurie\kaşif.txt","r")
     list1=list(f0)
     list2=list(f1)#metin dosyalarındaki bilgileri listelemeye giderek kullanım kolaylığı elde etmek istedik
     list3=list(f2)
@@ -38,10 +38,11 @@ if a==1:
 if a==2:
     print("[Resim kütüphanesi]")#resimler için pillow kütüphanesi kullandık 
     x = str(input("Bir Sayi giriniz: "))
-    resim = "D:\GitHub/fransiyumcurie/element resimleri/"+ x +".jpg"#sayıları resimler ile eşleştırdık girilen sayıyı atom numarası gibi değerlendirebiliriz
+    resim = "D:\GitHub/fransiyumcurie/"+ x +".jpg"#sayıları resimler ile eşleştırdık girilen sayıyı atom numarası gibi değerlendirebiliriz
     img = Image.open(resim)#resimleri açmak için kullandığımız komut satırı 
     img.show() 
 if a==3:
+    print("[Karışım kütüphanesi]")
     list=["Amonyak(1)","Karbonat(2)","Bakır(II)sülfat(3)","Sülfürik asit(4)","Sodyum bikarbonat(5)","Asetik asit(6)","Sodyum hidroksit(7)"," Hidroklorik asit(8)","Nitrik asit(9)","Kalsiyum karbonat(10)" ]
     print(list)
     g=int(input("Bileşik seçiniz:"))
@@ -128,6 +129,7 @@ if a==3:
 
 if a==4:
     print("****TEŞEKKÜRLER****")#periyodik tablo için önemli isimleri print komutu ile yazdık
-    print("Lavoisier\nJohann Döbereiner\nAlexandre Beguyer de Chancourtois\nJohn Newlands\nHenry Moseley\nGilen Siborg\n5Dimitri Mendeleyev  ve Lothar Meyer\nMarie curie\nElizabeth Ascheim")
+    print("Lavoisier\nJohann Döbereiner\nAlexandre Beguyer de Chancourtois\nJohn Newlands\nHenry Moseley\nGilen Siborg\nDimitri Mendeleyev  ve Lothar Meyer\nMarie curie\nElizabeth Ascheim")
 if a>=5:
     print("Lütfen uygun bir tercihte bulunuz\n***Elementler için-->1\n***Resimler için-->2\n***Karışımlar için-->3")#olası tercihler dışında yapılacak tercihler için uyarı ve kaçış noktası planladık
+
