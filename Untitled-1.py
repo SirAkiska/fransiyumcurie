@@ -1,3 +1,4 @@
+import webbrowser
 from PIL import Image 
 print("     *****FRANSİYUM CURİE HOŞ GELDİNİZ*****      ")#Bir başlangıç menüsü hazırlamak istedik
 print("#Elementler için -->1 \n#Element resimleri için -->2 \n#Karışımlar için -->3 \n*Kahramanlar-->4 ")#if komutu yardımı ile kullanım tercihleri oluşturduk
@@ -62,6 +63,13 @@ if a==3:
         print("            Günlük Hayatta Kullanımı")
         print(" ")
         print("   Karbonat, hamur işi tariflerinin vazgeçilmezi olarak bilinir,Karbonat aynı zamanda iyi bir diş temizleyicidir. Dişlerde çay, kahve ve sigaradan dolayı oluşan sarı lekelerin temizlenmesinde yardımcı olur.Karbonat, içinde barındırdığı anti bakteriyel özelliği sayesinde yer yüzeylerinin temizliği ve hijyeninde kullanılabilir. Etkin bir mikrop öldürücüdür aynı zamanda böcek ve zararlı haşaratı da kokusu sayesinde bulunduğunuz mekanlardan uzak tutacaktır.tekstil ürünlerinizde oluşacak lekelerin temizliği için karbonat tercih edebilirsiniz.")
+        h=str(input("Karbonat hakkında bilgi içeren video için [i], Karbonat ve sirke deneyi için [e], Açmak istemiyorsanız [s] yazınız:"))
+        if h=="e":
+            webbrowser.open("https://www.youtube.com/watch?v=lmXP9YPYrWE")
+        if h=="i":
+            webbrowser.open("https://www.youtube.com/watch?v=RUa43k0GUZs")
+        if h=="n":
+            print("Nasıl isterseniz :)")
     if g==3:
         print("           Bakır(II)sülfat(CuSO4)")
         print(" ")
