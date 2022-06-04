@@ -1,1 +1,0 @@
-Eren[1,1] furkan[1,2] mehmet[1,3] ali[1,4] serdar[1,5]
