@@ -68,7 +68,7 @@ if a==3:
             webbrowser.open("https://www.youtube.com/watch?v=lmXP9YPYrWE")
         if h=="i":
             webbrowser.open("https://www.youtube.com/watch?v=RUa43k0GUZs")
-        if h=="n":
+        if h=="s":
             print("Nasıl isterseniz :)")
     if g==3:
         print("           Bakır(II)sülfat(CuSO4)")
