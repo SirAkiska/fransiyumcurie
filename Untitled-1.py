@@ -3,11 +3,11 @@ from PIL import Image
 
 class Fransiyum():
 
-   def __init__(self, ad):
+   def __init__(self, ad):#Baslangıç menüsü fonksiyonu oluşturduk.
       self.ad = ad
-      self.calisma = True
+      self.calisma = True #Kod satırlarını tekrardan çalıştırmak için while döngüsüne bağladık.
 
-   def baslangic(self):
+   def baslangic(self):       
       secim = self.modsecim()
       if secim==1:
         self.elementler()
@@ -32,7 +32,7 @@ class Fransiyum():
      
    def elementler(self):
       x=int(input("1-118 arasında atom numarası giriniz:"))
-      while x<1 or x>118:
+      while x<1 or x>118: #Bir kaçış noktası ekledik yanlış girilen değeri tekrar girilmesi için.
         x=int(input("Lütfen 1-118 arasında atom numarası giriniz:"))
       print("[Element kütüphanesi]")
       f0=open("D:\GitHub/fransiyumcurie\dosyalar\element.txt","r")#yedi tane elementsel bilgi içeren metni open komutu ile açıp "read"modu ile okuma yapmayı sağladık
@@ -79,8 +79,10 @@ class Fransiyum():
        list=["Amonyak(1)","Karbonat(2)","Bakır(II)sülfat(3)","Sülfürik asit(4)","Sodyum bikarbonat(5)","Asetik asit(6)","Sodyum hidroksit(7)"," Hidroklorik asit(8)","Nitrik asit(9)","Kalsiyum karbonat(10)" ]
        print(list)
        a=int(input("Bileşik seçiniz:"))
+       while a<1 or a>10 :
+        a=int(input("Lütfen 1-10 arasında sayı giriniz:"))
        if a==1:
-           print("           Amonyak(NH3).")
+           print("           Amonyak(NH3)")
            print(" ")
            print("   Amonyak, formülü NH3 olan; azot atomu ve hidrojen atomundan oluşan renksiz, keskin ve hoş olmayan kokuya sahip bir gaz bileşiğidir. OH- iyonu içermediği halde suda zayıf baz özelliği gösterir. Bir amonyak molekülü, bir azot ve üç hidrojen atomundan oluşur.")
            print(" ")
@@ -236,6 +238,6 @@ class Fransiyum():
 
 
 
-Periyodik_Tablo = Fransiyum("FransiyumCruie")
-while Periyodik_Tablo.calisma:
+Periyodik_Tablo = Fransiyum("FransiyumCruie") #Sınıfa bir değişken atadık.
+while Periyodik_Tablo.calisma: #Sınıfı while döngüsüne sokarak sürekli çalışmasını sağladık.
   Periyodik_Tablo.baslangic()
