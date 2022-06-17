@@ -70,7 +70,7 @@ class Fransiyum():
       while x<1 or x>118:
        x=int(input("Lütfen atoma ait atom numarası giriniz:"))
       print("[Resim kütüphanesi]")#resimler için pillow kütüphanesi kullandık 
-      resim = "+ x +".jpg"#sayıları resimler ile eşleştırdık girilen sayıyı atom numarası gibi değerlendirebiliriz
+      resim = ""+ x +".jpg"#sayıları resimler ile eşleştırdık girilen sayıyı atom numarası gibi değerlendirebiliriz
       img = Image.open(resim)#resimleri açmak için kullandığımız komut satırı 
       img.show()
 
