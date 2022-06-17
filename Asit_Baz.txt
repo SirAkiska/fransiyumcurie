@@ -1,0 +1,16 @@
+
+Ph-> 1.00 ve 2.00 arasındaki asitler :Akü asidi,Gastrik asit,Mide asidi,Fosforik asit,
+Ph-> 2.00 ve 3.00 arasındaki asitler :Limon suyu,Sirke,Benzoik asit,Askorbik asit
+Ph-> 3.00 ve 4.00 arasındaki asitler :Sitrik asit,Hidroflorik asit,Askorbik asit
+Ph-> 4.00 ve 5.00 arasındaki asitler :Kahve,Bira,Domates,Patlıcan. 
+Ph-> 5.00 ve 6.00 arasındaki asitler :Kahve,Çay,Asit yağmurları,İdrar,Patlıcan.
+Ph-> 6.00 ve 7.00 arasındaki asitler :Süt,Su,İnsan tükürüğü,İdrar,Yumurta,Tavuk eti.
+Ph-> 7.00 ve 8.00 arasındaki bazlar :Kan,İdrar,Safra sıvısı,Göz yaşı,Beyin omurilik sıvısı,Pankreas özsuyu
+Ph-> 8.00 ve 9.00 arasındaki bazlar :El sabunu,Alüminyum hidroksit,Soda,Potasyum
+Ph-> 9.00 ve 10.00 arasındaki bazlar :Alüminyum hidroksit,Magnezyum hidroksit,Soda
+Ph-> 10.00 ve 11.00 arasındaki bazlar :Magnezyum hidroksit,
+Ph-> 11.00 ve 12.00 arasındaki bazlar :Amonyak,Sabunlu su
+Ph-> 12.00 ve 13.00 arasındaki bazlar :Çamaşır suyu,Kalsiyum hidroksit,
+Ph-> 13.00 ve 14.00 arasındaki bazlar :Sodyum hidroksit,Potasyum hidroksit,
+
+
