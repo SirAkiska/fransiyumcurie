@@ -20,9 +20,9 @@ class Fransiyum():
         
 
    def modsecim(self):
-      secim = int(input("\n****{}'ye HOŞ GELDİNİZ***** \n#Elementler için -->1 \n#Element resimleri için -->2 \n#Karışımlar için -->3 \n#Asit-baz için -->4 \n#Kahramanlar-->5 \n#Mod seçiniz:".format(self.ad)))
-      while  secim < 1 or secim > 5: #olası tercihler dışında yapılacak tercihler için uyarı ve kaçış noktası planladık.
-         secim = int(input("Lütfen 1 - 5 arasında belirtilen seçeneklerden birini giriniz!"))
+      secim = int(input("\n****{}'ye HOŞ GELDİNİZ***** \n#Elementler için -->1 \n#Element resimleri için -->2 \n#Karışımlar için -->3 \n#Kahramanlar-->4 \n#Mod seçiniz:".format(self.ad)))
+      while  secim < 1 or secim > 4: #olası tercihler dışında yapılacak tercihler için uyarı ve kaçış noktası planladık.
+         secim = int(input("Lütfen 1 - 4 arasında belirtilen seçeneklerden birini giriniz!"))
          print("Lütfen Sayı Değeri Giriniz!")
       return secim   
       
@@ -33,13 +33,13 @@ class Fransiyum():
       while x<1 or x>118: #Bir kaçış noktası ekledik yanlış girilen değeri tekrar girilmesi için.
         x=int(input("Lütfen 1-118 arasında atom numarası giriniz:"))
       print("[Element kütüphanesi]")
-      f0=open("D:\GitHub/fransiyumcurie\dosyalar\element.txt","r")#yedi tane elementsel bilgi içeren metni open komutu ile açıp "read"modu ile okuma yapmayı sağladık
-      f1=open("D:\GitHub/fransiyumcurie\dosyalar\Semboller.txt","r")
-      f2=open("D:\GitHub/fransiyumcurie\dosyalar/tür.txt","r")
-      f3=open("D:\GitHub/fransiyumcurie\dosyalar\grupadı.txt","r")
-      f4=open("D:\GitHub/fransiyumcurie\dosyalar\oda koşullarındaki halleri .txt.txt","r")
-      f5=open("D:\GitHub/fransiyumcurie\dosyalar\erime noktaları .txt.txt","r")
-      f6=open("D:\GitHub/fransiyumcurie\dosyalar\kaşif.txt","r")
+      f0=open("element.txt","r")#yedi tane elementsel bilgi içeren metni open komutu ile açıp "read"modu ile okuma yapmayı sağladık
+      f1=open("Semboller.txt","r")
+      f2=open("tür.txt","r")
+      f3=open("grupadı.txt","r")
+      f4=open("oda koşullarındaki halleri .txt.txt","r")
+      f5=open("erime noktaları .txt.txt","r")
+      f6=open("kaşif.txt","r")
       list1=list(f0)
       list2=list(f1)#metin dosyalarındaki bilgileri listelemeye giderek kullanım kolaylığı elde etmek istedik
       list3=list(f2)
@@ -69,7 +69,7 @@ class Fransiyum():
       while x<1 or x>118:
        x=int(input("Lütfen 1-118 arasında atom numarası giriniz:"))
       print("[Resim kütüphanesi]")#resimler için pillow kütüphanesi kullandık 
-      resim = "D:\GitHub/fransiyumcurie/element resimleri/"+ x +".jpg"#sayıları resimler ile eşleştırdık girilen sayıyı atom numarası gibi değerlendirebiliriz
+      resim =""+ x +".jpg"#sayıları resimler ile eşleştırdık girilen sayıyı atom numarası gibi değerlendirebiliriz
       img = Image.open(resim)#resimleri açmak için kullandığımız komut satırı 
       img.show()
 
@@ -219,7 +219,7 @@ class Fransiyum():
 
    def kahramanlar(self):
     a=str(input("Press F to pay respects"))
-    resim = "D:\GitHub/fransiyumcurie/element resimleri/F.jpg"
+    resim = "F.jpg"
     img=Image.open(resim)
     if a=="F" or "f":
       img.show()
