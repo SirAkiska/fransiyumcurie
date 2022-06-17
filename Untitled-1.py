@@ -16,13 +16,15 @@ class Fransiyum():
       if secim==3:
         self.karisimlar()
       if secim==4:
+        self.asit_baz()
+      if secim==5:
         self.kahramanlar()
         
 
    def modsecim(self):
-      secim = int(input("\n****{}'ye HOŞ GELDİNİZ***** \n#Elementler için -->1 \n#Element resimleri için -->2 \n#Karışımlar için -->3 \n#Kahramanlar-->4 \n#Mod seçiniz:".format(self.ad)))
-      while  secim < 1 or secim > 4: #olası tercihler dışında yapılacak tercihler için uyarı ve kaçış noktası planladık.
-         secim = int(input("Lütfen 1 - 4 arasında belirtilen seçeneklerden birini giriniz!"))
+      secim = int(input("\n****{}'ye HOŞ GELDİNİZ***** \n#Elementler için -->1 \n#Element resimleri için -->2 \n#Karışımlar için -->3 \n#Asit ve Bazlar için -->4 \n#Kahramanlar-->5 \n#Mod seçiniz:".format(self.ad)))
+      while  secim < 1 or secim > 5: #olası tercihler dışında yapılacak tercihler için uyarı ve kaçış noktası planladık.
+         secim = int(input("Lütfen 1 - 5 arasında belirtilen seçeneklerden birini giriniz!"))
          print("Lütfen Sayı Değeri Giriniz!")
       return secim   
       
@@ -216,7 +218,24 @@ class Fransiyum():
           print(" ")
           print("    Kalsiyum karbonat, sanayide, mermer, tebeşir ve kireç taşı gibi farklı malzemelerin üretiminde yoğun olarak kullanılır. Aynı şekilde boya malzemelerinin üretilmesinde yoğun olarak bu bileşikten yararlanılır. PVC üretiminde de kullanılan kalsiyum karbonat, seramik yapımında yararlanılan bir moleküldür. Tıp alanında,genellikle Böbrek fonksiyonunu kaybetmiş, kandaki fosforu idrar yolu ile atamayan kronik böbrek yetersizliği durumlarında besinlerdeki fosforu bağlamasında, fosfatlı bileşiklerin dengelenmesinde kullanılır. (phos-ex) Gıda alanında ise E170 adıyla katkı maddesi şeklinde ve soya sütünde kullanılır. Son yıllarda çevresel dengenin sağlanmasında kalsiyum karbonatın önemli bir yere sahip olduğu görülmüştür.")
       
-
+   def asit_bazlar(self)
+      a=str(input("Asitler ile ilgili bilgi için 'Asit' yazınız. Bazlar ile ilgili bilgi için 'Baz' yazınız. İstemiyorsanız 'Geç' yazınız.\n"))
+      if a=="Asit" or "asit":
+        webbrowser.open("https://tr.wikipedia.org/wiki/Asit")
+      if a=="Baz" or "baz":
+        webbrowser.open("https://tr.wikipedia.org/wiki/Baz")
+      if a=="geç" or "Geç":
+         print("\nTabi efendim.")
+         f0=open("Asit_Baz.txt","r")
+         list1=list(f0)
+         x=int(input("1-14 arasında Ph değeri giriniz:"))
+         x-=1
+         while x<1 or x>118:
+           x=int(input("Lütfen 1-14 arasında değer giriniz:"))#olası tercihler dışında yapılacak tercihler için uyarı ve kaçış noktası planladık
+         n1=list1[x]
+         print("İstediğiniz %s"%(n1))
+ 
+  
    def kahramanlar(self):
     a=str(input("Press F to pay respects"))
     resim = "F.jpg"
