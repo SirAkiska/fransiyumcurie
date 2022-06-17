@@ -16,10 +16,8 @@ class Fransiyum():
       if secim==3:
         self.karisimlar()
       if secim==4:
-        self.asit_baz()
-      if secim==5:
         self.kahramanlar()
-
+        
 
    def modsecim(self):
       secim = int(input("\n****{}'ye HOŞ GELDİNİZ***** \n#Elementler için -->1 \n#Element resimleri için -->2 \n#Karışımlar için -->3 \n#Asit-baz için -->4 \n#Kahramanlar-->5 \n#Mod seçiniz:".format(self.ad)))
@@ -217,22 +215,15 @@ class Fransiyum():
           print("            Günlük Hayatta Kullanımı")
           print(" ")
           print("    Kalsiyum karbonat, sanayide, mermer, tebeşir ve kireç taşı gibi farklı malzemelerin üretiminde yoğun olarak kullanılır. Aynı şekilde boya malzemelerinin üretilmesinde yoğun olarak bu bileşikten yararlanılır. PVC üretiminde de kullanılan kalsiyum karbonat, seramik yapımında yararlanılan bir moleküldür. Tıp alanında,genellikle Böbrek fonksiyonunu kaybetmiş, kandaki fosforu idrar yolu ile atamayan kronik böbrek yetersizliği durumlarında besinlerdeki fosforu bağlamasında, fosfatlı bileşiklerin dengelenmesinde kullanılır. (phos-ex) Gıda alanında ise E170 adıyla katkı maddesi şeklinde ve soya sütünde kullanılır. Son yıllarda çevresel dengenin sağlanmasında kalsiyum karbonatın önemli bir yere sahip olduğu görülmüştür.")
-
-   def asit_baz(self): 
-      while x<1 or x>118:
-       x=int(input("Lütfen 1-118 arasında atom numarasu giriniz:"))#olası tercihler dışında yapılacak tercihler için uyarı ve kaçış noktası planladık
-      f0=open("D:\GitHub/fransiyumcurie\Asit-Baz/Asit.txt.txt","r")
-      list1=list(f0)
-      x=int(input("1-118 arasında atom numarası giriniz:"))
-      n1=list1[x]
-      print("Asitiniz %s"%(n1))
       
-  
-
-
-
 
    def kahramanlar(self):
+    a=str(input("Press F to pay respects"))
+    resim = "D:\GitHub/fransiyumcurie/element resimleri/F.jpg"
+    img=Image.open(resim)
+    if a=="F" or "f":
+      img.show()
+      
       print("****TEŞEKKÜRLER****")#periyodik tablo için önemli isimleri print komutu ile yazdık
       print("Lavoisier\nJohann Döbereiner\nAlexandre Beguyer de Chancourtois\nJohn Newlands\nHenry Moseley\nGilen Siborg\nDimitri Mendeleyev  ve Lothar Meyer\nMarie curie\nElizabeth Ascheim")
 
