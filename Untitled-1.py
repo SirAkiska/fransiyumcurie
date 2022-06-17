@@ -16,7 +16,7 @@ class Fransiyum():
       if secim==3:
         self.karisimlar()
       if secim==4:
-        self.asit_baz()
+        self.asit_bazlar()
       if secim==5:
         self.kahramanlar()
         
@@ -181,6 +181,8 @@ class Fransiyum():
             h=str(input("Sodyum bikarbonat ve Asetik asit ile aynı deneyde yer alıyor izlemek istediğinize emin misiniz?\n"))
             if h=="evet" or "eminim" or "evet eminim" or "açılsın" :
                webbrowser.open("https://www.youtube.com/watch?v=cAjP5JR11AE")
+            if h=="hayır":
+              print("\nNasıl isterseniz efendim :)")
           if h=="hayır" or "istemiyorum":
             print("\nNasıl isterseniz efendim :)")
        if a==8:
@@ -218,34 +220,38 @@ class Fransiyum():
           print(" ")
           print("    Kalsiyum karbonat, sanayide, mermer, tebeşir ve kireç taşı gibi farklı malzemelerin üretiminde yoğun olarak kullanılır. Aynı şekilde boya malzemelerinin üretilmesinde yoğun olarak bu bileşikten yararlanılır. PVC üretiminde de kullanılan kalsiyum karbonat, seramik yapımında yararlanılan bir moleküldür. Tıp alanında,genellikle Böbrek fonksiyonunu kaybetmiş, kandaki fosforu idrar yolu ile atamayan kronik böbrek yetersizliği durumlarında besinlerdeki fosforu bağlamasında, fosfatlı bileşiklerin dengelenmesinde kullanılır. (phos-ex) Gıda alanında ise E170 adıyla katkı maddesi şeklinde ve soya sütünde kullanılır. Son yıllarda çevresel dengenin sağlanmasında kalsiyum karbonatın önemli bir yere sahip olduğu görülmüştür.")
       
-   def asit_bazlar(self)
-      a=str(input("Asitler ile ilgili bilgi için 'Asit' yazınız. Bazlar ile ilgili bilgi için 'Baz' yazınız. İstemiyorsanız 'Geç' yazınız.\n"))
-      if a=="Asit" or "asit":
-        webbrowser.open("https://tr.wikipedia.org/wiki/Asit")
-      if a=="Baz" or "baz":
-        webbrowser.open("https://tr.wikipedia.org/wiki/Baz")
-      if a=="geç" or "Geç":
+   def asit_bazlar(self):
+       h=str(input("Asitler ile ilgili bilgi için 'Asit' yazınız. Bazlar ile ilgili bilgi için 'Baz' yazınız. İstemiyorsanız 'Geç' yazınız.\n"))
+       if h=="Asit" or "asit":
+         webbrowser.open("https://tr.wikipedia.org/wiki/Asit")
+       if h=="Baz" or "baz":
+         webbrowser.open("https://tr.wikipedia.org/wiki/Baz")
+       if h=="geç" or "Geç":
          print("\nTabi efendim.")
+         x=int(input("\n1-14 arasında Ph değeri giriniz:"))
          f0=open("Asit_Baz.txt","r")
          list1=list(f0)
          x=int(input("1-14 arasında Ph değeri giriniz:"))
          x-=1
-         while x<1 or x>118:
+         while x<1 or x>14:
            x=int(input("Lütfen 1-14 arasında değer giriniz:"))#olası tercihler dışında yapılacak tercihler için uyarı ve kaçış noktası planladık
          n1=list1[x]
          print("İstediğiniz %s"%(n1))
  
   
    def kahramanlar(self):
-    a=str(input("Press F to pay respects"))
-    resim = "F.jpg"
-    img=Image.open(resim)
+    a=str(input("Press F to pay respects\n"))
+
     if a=="F" or "f":
+      resim = "F.jpg"
+      img=Image.open(resim)
       img.show()
-      
       print("****TEŞEKKÜRLER****")#periyodik tablo için önemli isimleri print komutu ile yazdık
       print("Lavoisier\nJohann Döbereiner\nAlexandre Beguyer de Chancourtois\nJohn Newlands\nHenry Moseley\nGilen Siborg\nDimitri Mendeleyev  ve Lothar Meyer\nMarie curie\nElizabeth Ascheim")
-
+      
+    else:
+      while a!="F" or a!="f":
+        a=str(input("Press F to pay respects\n"))
 
 
 Periyodik_Tablo = Fransiyum("FransiyumCruie") #Sınıfa bir değişken atadık.
